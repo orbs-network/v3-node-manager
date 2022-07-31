@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/orbs-network/v3-node-manager.git"
   },
-  "author": "Yuval",
-  "license": "ISC",
+  "author": "yuval@orbs.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/orbs-network/v3-node-manager/issues"
   },
