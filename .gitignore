@@ -1,2 +1,8 @@
+#sys files
 .DS_store
+yuval.sh
+
+#folders
 node_modules/
+pkg-output/
+dist/
