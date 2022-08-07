@@ -1,6 +1,6 @@
 {
   "name": "@orbs-network/v3-node-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "yuval@orbs.com",
   "license": "MIT",
@@ -26,12 +26,13 @@
   "scripts": {
     "prettier": "prettier --write '{test,src}/**/*.{ts,js,json}'",
     "prebuild": "rm -rf dist; npm run prettier",
-    "build": "tsc",
-    "build:pkg": "pkg --target node16-linux,node16-macos-arm64 --output pkg-output/v3-node-manager ./dist/index.js",
+    "build": "npm run create-version && tsc",
+    "build:pkg": "pkg --target node16-linux-x64 --output pkg-output/v3-node-manager-x-64$(cat .version) ./dist/index.js",
     "start": "node ./dist/index.js",
     "create-version": "./create-version.sh"
   },
   "prettier": {
-    "printWidth": 180
+    "printWidth": 180,
+    "tabWidth": 4
   }
 }
