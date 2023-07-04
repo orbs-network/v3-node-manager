@@ -1,6 +1,0 @@
-node_modules
-artifacts
-cache
-manager
-coverage*
-gasReporterOutput.json
